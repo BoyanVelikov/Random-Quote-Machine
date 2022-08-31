@@ -1,4 +1,11 @@
 .App {
+
+  @media only screen and (max-width: 600px) {
+    .buttons {
+      flex-direction: column-reverse;
+    }
+  }
+
   text-align: center;
   #quote-box {
     background-color: white;
@@ -6,22 +13,29 @@
     color: black;
     #author {
       text-align: end;
+      margin: 10px;
     }
-    .button {
+    #text {
+      margin: 10px;
+    }
+    .buttons {
     #tweet-quote {
       float: left;
       padding: 10px;
-      color: white;
+      color: blue($color: #ADD8E6);
       text-decoration: none;
+      margin: 10px;
     }
   }
     #new-quote {
       float: right;
-      color: white;
+      color: black;
       border-radius: 10px;
       padding: 10px;
       border: none;
       cursor: pointer;
+      font-size: 16;
+      margin: 10px;
     }
   }
   .App-header {
